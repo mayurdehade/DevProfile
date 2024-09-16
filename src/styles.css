@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #4338CA;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Theme */
+
+.dark {
+    background-color: #04081f;
+    color: #fff;
+}
+
+body {
+    background-color: #fff;
+    /* color: #4b5563; */
+    color: black;
+}
