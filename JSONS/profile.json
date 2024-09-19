@@ -4,7 +4,78 @@
     "Full Stack Developer",
     "Front End Developer",
     "Back End Developer",
-    "Angular Developer"
+    "Angular Developer",
+    "Java Developer"
+  ],
+  "skills": [
+    {
+      "img_url": "https://angular.io/assets/images/logos/angular/angular.svg",
+      "name": "angular"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
+      "name": "bootstrap"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+      "name": "css3"
+    },
+    {
+      "img_url": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "name": "git"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+      "name": "html5"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+      "name": "java"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "name": "javascript"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+      "name": "mongodb"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+      "name": "mysql"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
+      "name": "php"
+    },
+    {
+      "img_url": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+      "name": "postman"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+      "name": "python"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+      "name": "react"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      "name": "sass"
+    },
+    {
+      "img_url": "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
+      "name": "spring"
+    },
+    {
+      "img_url": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+      "name": "tailwind"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+      "name": "typescript"
+    }
   ],
   "bio": "Aspiring Full Stack Developer | Computer Engineer | MySQL | Designing | Java | DSA | JavaScript | Angular | React | TypeScript",
   "about": "I am Mayur Dehade, a Computer Engineering graduate from Pune University with a strong passion for full-stack web development. My expertise spans across technologies such as Java, Spring Boot, Hibernate, React JS, MongoDB, SQL, HTML, CSS, JavaScript, and Angular, allowing me to create scalable and efficient web applications. I enjoy working on complex projects and have developed solutions that demonstrate my ability to address real-world challenges.",
@@ -13,6 +84,7 @@
   "resume": "https://drive.google.com/file/d/17KzItuM_uXCG3m-4tg0NWmx958IZb12E/view?usp=sharing",
   "github": "https://github.com/mayurdehade",
   "linkedin": "https://www.linkedin.com/in/mayurdehade/",
+  "stackoverflow": "https://stackoverflow.com/users/27378747/mayur-dehade",
   "avtar": "https://avatars.githubusercontent.com/u/77581680?v=4",
   "location": "Pune, India",
   "email": "dehademayur9@gmail.com",

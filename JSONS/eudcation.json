@@ -1,0 +1,39 @@
+{
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Computer Engineering",
+      "institution": "Pune University",
+      "yearOfCompletion": 2024,
+      "percentage": "8.97/10",
+      "summary": "Completed a comprehensive curriculum covering computer science fundamentals, software engineering, and web development. Gained hands-on experience in various technologies and frameworks, and worked on several academic and personal projects.",
+      "keyHighlights": [
+        "Final Year Project: Criminal Activity Detection System using deep learning",
+        "Participated in technical workshops on Spring Boot, Hibernate, and Angular",
+        "Conducted a study on algorithms and data structures",
+        "Completed a 'Campus To Technical Careers' training program with TNS India Foundation"
+      ]
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC) in Science",
+      "institution": "XYZ Junior College",
+      "yearOfCompletion": 2020,
+      "percentage": "85%",
+      "summary": "Focused on core science subjects like Physics, Chemistry, and Mathematics, building a strong foundation for further studies in engineering.",
+      "keyHighlights": [
+        "Secured distinction with 85% aggregate marks",
+        "Member of the science club and participated in science exhibitions"
+      ]
+    },
+    {
+      "degree": "Secondary School Certificate (SSC)",
+      "institution": "ABC High School",
+      "yearOfCompletion": 2018,
+      "percentage": "90%",
+      "summary": "Excelled in all subjects with a focus on mathematics and science. Developed interest in problem-solving and logical reasoning.",
+      "keyHighlights": [
+        "Graduated with 90% marks, securing a distinction",
+        "Received the Best Student Award for academic excellence"
+      ]
+    }
+  ]
+}

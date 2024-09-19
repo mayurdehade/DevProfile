@@ -1,0 +1,85 @@
+{
+  "projects": [
+    {
+      "title": "Criminal Activity Detection System",
+      "image": "path/to/image.jpg",
+      "githubLink": "https://github.com/yourusername/criminal-activity-detection-system",
+      "deploymentLink": "https://yourdeploymentlink.com",
+      "year": 2024,
+      "toolsAndTechnologies": [
+        "Python",
+        "Django",
+        "Deep Learning",
+        "CNN",
+        "YOLO v7",
+        "SQLite3"
+      ],
+      "summary": "A system that detects criminal activity in real-time using deep learning algorithms. It utilizes CNN for activity detection and YOLO v7 for weapon detection, providing live camera monitoring and video upload features. The system sends alert notifications via SMS when suspicious activity or weapons are detected.",
+      "keyFeatures": [
+        "Real-time criminal and weapon detection",
+        "Live camera monitoring and video upload options",
+        "Automated SMS alerts for authorities",
+        "Highly accurate model trained on thousands of images"
+      ]
+    },
+    {
+      "title": "CareerNavigator",
+      "image": "path/to/image.jpg",
+      "githubLink": "https://github.com/yourusername/careernavigator",
+      "deploymentLink": "https://yourdeploymentlink.com",
+      "year": 2024,
+      "toolsAndTechnologies": ["Spring Boot", "Angular", "MySQL", "Java"],
+      "summary": "A placement management web application for colleges, featuring student profiles, placement drive postings, and secure application submission. The system allows students to view job opportunities, apply, and track their application status. It includes features for placement officers to post drives, manage applications, and conduct mock tests.",
+      "keyFeatures": [
+        "User roles for students, placement officers, and companies",
+        "Email notifications for placement updates",
+        "Mock test and score management",
+        "Secure login and data handling"
+      ]
+    },
+    {
+      "title": "Online Food Delivery System",
+      "image": "path/to/image.jpg",
+      "githubLink": "https://github.com/yourusername/online-food-delivery",
+      "deploymentLink": "https://yourdeploymentlink.com",
+      "year": 2024,
+      "toolsAndTechnologies": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Stripe",
+        "Tailwind CSS"
+      ],
+      "summary": "An online food delivery platform allowing customers to browse and order food from various restaurants. The system includes role-based access for customers and restaurant owners, enabling restaurant management, order processing, and payment integration via Stripe. The platform is built for scalability and real-time order tracking.",
+      "keyFeatures": [
+        "Role-based access for customers and restaurant owners",
+        "Stripe payment gateway integration for seamless transactions",
+        "Real-time order tracking for customers",
+        "Nodemailer integration for order confirmation emails"
+      ]
+    },
+    {
+      "title": "CarFlex - Car Rental System",
+      "image": "path/to/image.jpg",
+      "githubLink": "https://github.com/yourusername/carflex",
+      "deploymentLink": "https://yourdeploymentlink.com",
+      "year": 2024,
+      "toolsAndTechnologies": [
+        "Spring Boot",
+        "Angular",
+        "Ng Zorro UI",
+        "Spring Security",
+        "MySQL"
+      ],
+      "summary": "CarFlex is a car rental system designed to allow users to search for, book, and rent cars. It includes account creation, car listings, booking management, and admin verification for rental approvals. The system ensures secure login and role-based access control.",
+      "keyFeatures": [
+        "Car creation and listing functionality",
+        "Car search and filtering options",
+        "User and admin roles with authorization",
+        "Booking and rental management",
+        "Admin verification and request approval"
+      ]
+    }
+  ]
+}
