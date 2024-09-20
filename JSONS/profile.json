@@ -71,6 +71,14 @@
     {
       "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
       "name": "Python"
+    },
+    {
+      "img_url": "https://angular.io/assets/images/logos/angular/angular.svg",
+      "name": "Angular"
+    },
+    {
+      "img_url": "https://angular.io/assets/images/logos/angular/angular.svg",
+      "name": "Angular"
     }
   ],
   "bio": "Aspiring Full Stack Developer | Computer Engineer | MySQL | Designing | Java | DSA | JavaScript | Angular | React | TypeScript",
