@@ -13,7 +13,7 @@
         "Stripe",
         "Tailwind CSS"
       ],
-      "summary": "An online food delivery platform allowing customers to browse and order food from various restaurants. The system includes role-based access for customers and restaurant owners, enabling restaurant management, order processing, and payment integration via Stripe. The platform is built for scalability and real-time order tracking.",
+      "summary": "An online food delivery platform allowing customers to browse and order food from various restaurants. The system includes role-based access for customers and restaurant owners, enabling restaurant management, order processing, and payment integration via Stripe. The platform is built for scalability and real-time order tracking."
     },
     {
       "title": "CarFlex - Car Rental System",
@@ -42,7 +42,7 @@
         "YOLO v7",
         "SQLite3"
       ],
-      "summary": "A system that detects criminal activity in real-time using deep learning algorithms. It utilizes CNN for activity detection and YOLO v7 for weapon detection, providing live camera monitoring and video upload features. The system sends alert notifications via SMS when suspicious activity or weapons are detected.",
+      "summary": "A system that detects criminal activity in real-time using deep learning algorithms. It utilizes CNN for activity detection and YOLO v7 for weapon detection, providing live camera monitoring and video upload features. The system sends alert notifications via SMS when suspicious activity or weapons are detected."
     }
   ]
 }
