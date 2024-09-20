@@ -13,8 +13,12 @@
       "name": "Java"
     },
     {
-      "img_url": "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
-      "name": "Spring and Spring Boot"
+      "img_url": "https://www.vectorlogo.zone/logos/springio/springio-ar21.svg",
+      "name": "Spring"
+    },
+    {
+      "img_url": "https://raw.githubusercontent.com/mayurdehade/DevProfile/refs/heads/main/src/assets/media/spring-boot-logo.svg",
+      "name": "Spring Boot"
     },
     {
       "img_url": "https://angular.io/assets/images/logos/angular/angular.svg",
