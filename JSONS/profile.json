@@ -10,67 +10,63 @@
   "skills": [
     {
       "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-      "name": "java"
+      "name": "Java"
     },
     {
       "img_url": "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
-      "name": "spring"
+      "name": "Spring and Spring Boot"
     },
     {
       "img_url": "https://angular.io/assets/images/logos/angular/angular.svg",
-      "name": "angular"
+      "name": "Angular"
     },
     {
       "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-      "name": "html5"
+      "name": "HTML 5"
     },
     {
       "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      "name": "css3"
+      "name": "CSS 3"
     },
     {
       "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-      "name": "javascript"
+      "name": "JavaScript"
     },
     {
       "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-      "name": "typescript"
+      "name": "TypeScript"
     },
     {
       "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-      "name": "react"
+      "name": "React"
     },
     {
       "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
-      "name": "sass"
+      "name": "SASS"
     },
     {
       "img_url": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-      "name": "tailwind"
+      "name": "Tailwind CSS"
     },
     {
       "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-      "name": "mysql"
+      "name": "MySQL"
     },
     {
       "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-      "name": "mongodb"
+      "name": "Mongo DB"
     },
     {
       "img_url": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-      "name": "postman"
+      "name": "Postman"
     },
     {
       "img_url": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "name": "git"
-    },
-    {
-      "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
-      "name": "php"
+      "name": "Git"
     },
     {
       "img_url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-      "name": "python"
+      "name": "Python"
     }
   ],
   "bio": "Aspiring Full Stack Developer | Computer Engineer | MySQL | Designing | Java | DSA | JavaScript | Angular | React | TypeScript",
