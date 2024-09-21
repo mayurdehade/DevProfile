@@ -16,24 +16,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #4338CA;
+    background-color: #a7a6a8;
     border-radius: 5px;
     cursor: pointer;
 }
 
 body::-webkit-scrollbar-button {
     display: none;
-}
-
-/* Theme */
-
-.dark {
-    background-color: #04081f;
-    color: #fff;
-}
-
-body {
-    background-color: #fff;
-    /* color: #4b5563; */
-    color: black;
 }

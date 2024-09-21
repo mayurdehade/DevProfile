@@ -1,0 +1,28 @@
+<section class="dark:bg-theme-900 pb-24" id="skills">
+    <div class="max-w-3xl mx-auto px-5 pt-16 dark:bg-theme-900">
+        <div class="flex flex-col justify-center">
+
+            <div class="text-center">
+
+                <h2 class="font-semibold text-3xl dark:text-gray-100 text-gray-800">Skills and Tools</h2>
+
+                <p class="max-w-md mx-auto pt-5 dark:text-gray-300">
+                    Skills, Technology and Tools used by me
+                </p>
+
+            </div>
+
+
+            <div class="flex flex-wrap items-center justify-center gap-10 md:justify-around">
+                <div *ngFor="let skill of skills" class="w-auto h-16 justify-center mt-9 ">
+                    <div class="flex justify-center w-auto h-16">
+                        <img class="cursor-pointer w-auto h-14" src="{{skill.img_url}}" alt="">
+                    </div>
+                    <p class="text-center dark:text-gray-300 text-gray-800 w-auto h-16 text-wrap font-normal">{{skill.name}}</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

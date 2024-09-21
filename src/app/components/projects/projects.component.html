@@ -1,117 +1,86 @@
-<section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -m-4">
-            <div class="p-4 md:w-1/3">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400"
-                        alt="blog">
-                    <div class="p-6">
-                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-                        <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                            microdosing tousled waistcoat.</p>
-                        <div class="flex items-center flex-wrap ">
-                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                            <span
-                                class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                </svg>1.2K
-                            </span>
-                            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                    </path>
-                                </svg>6
-                            </span>
-                        </div>
+<section class="dark:bg-theme-900 bg-white pt-20" id="projects">
+    <div class="text-center pb-14">
+        <h2 class="font-semibold text-3xl dark:text-gray-100 text-gray-800">Projects</h2>
+    </div>
+
+    <div class="sm:pl-[10rem] sm:p-8 p-16 mt-4 sm:mt-0 sm:px-4 sm:py-2 max-md:m-0 max-md:p-5">
+
+        <div *ngFor="let project of projects | slice:0:2"
+            class='flex flex-col-reverse gap-20 max-md:gap-5 mt-12 sm:flex-row sm:items-center sm:justify-between'>
+            <div class='w-full sm:w-1/2'>
+                <div class='flex flex-col gap-2'>
+                    <h1 class='text-xl font-bold text-gray-800 dark:text-gray-100'>{{project.title}}</h1>
+                    <h2 class="text-theme-200">
+                        <span *ngFor="let t of project.toolsAndTechnologies">#{{t}} </span>
+                    </h2>
+                    <p class='sm:text-justify font-normal leading-loose text-sm sm:text-base dark:text-gray-400'>
+                        {{project.summary}}</p>
+                    <div class='flex gap-5 mt-7'>
+                        <a *ngIf="project.deploymentLink" href="{{project.deploymentLink}}" target='_blank'
+                            rel='noreferrer'
+                            class='flex items-center bg-gray-800 dark:text-black dark:bg-gray-100 text-white px-4 py-2 rounded-md text-sm'>
+                            Demo
+                        </a>
+                        <a href="{{project.githubLink}}" target="_blank"
+                            class="w-10 h-10 flex justify-center items-center mx-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                class="dark:fill-white fill-gray-800">
+                                <title>GitHub</title>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="p-4 md:w-1/3">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401"
-                        alt="blog">
-                    <div class="p-6">
-                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-                        <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                            microdosing tousled waistcoat.</p>
-                        <div class="flex items-center flex-wrap">
-                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                            <span
-                                class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                </svg>1.2K
-                            </span>
-                            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                    </path>
-                                </svg>6
-                            </span>
-                        </div>
+
+            <div class='w-full sm:w-1/2 flex justify-center'>
+                <img *ngIf="(project.image != 'null')" alt='project' src="{{project.image}}" class='rounded-md w-full sm:w-[60%] border-2 dark:border-gray-200 border-gray-800' onerror="this.onerror=null; this.src='../../../assets/media/dummy.svg';" />
+            </div>
+        </div>
+
+        <!-- hidden -->
+
+        <div *ngFor="let project of projects | slice:2" id="hidden"
+            class='flex flex-col-reverse gap-20 mt-12 sm:flex-row sm:items-center sm:justify-between hidden-container'>
+            <div class='w-full sm:w-1/2'>
+                <div class='flex flex-col gap-2'>
+                    <h1 class='text-xl font-bold text-gray-800 dark:text-gray-100'>{{project.title}}</h1>
+                    <h2 class="text-theme-200">
+                        <span *ngFor="let t of project.toolsAndTechnologies">#{{t}} </span>
+                    </h2>
+                    <p class='sm:text-justify font-normal  leading-loose text-sm sm:text-base dark:text-gray-400'>
+                        {{project.summary}}</p>
+                    <div class='flex gap-5 mt-7'>
+                        <a *ngIf="project.deploymentLink" href="{{project.deploymentLink}}" target='_blank' rel='noreferrer'
+                            class='flex items-center bg-gray-800 dark:text-black dark:bg-gray-100 text-white px-4 py-2 rounded-md text-sm'>
+                            Demo
+                        </a>
+                        <a href="{{project.githubLink}}" target="_blank"
+                            class="w-10 h-10 flex justify-center items-center mx-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                class="dark:fill-white fill-gray-800">
+                                <title>GitHub</title>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="p-4 md:w-1/3">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402"
-                        alt="blog">
-                    <div class="p-6">
-                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-                        <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                            microdosing tousled waistcoat.</p>
-                        <div class="flex items-center flex-wrap ">
-                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                            <span
-                                class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                </svg>1.2K
-                            </span>
-                            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                    </path>
-                                </svg>6
-                            </span>
-                        </div>
-                    </div>
-                </div>
+
+            <div class='w-full sm:w-1/2 flex justify-center'>
+                <img *ngIf="(project.image != 'null')" alt='project' src="{{project.image}}"
+                    class='rounded-md w-full sm:w-[60%] border-2 dark:border-gray-200 border-gray-800'
+                    onerror="this.onerror=null; this.src='../../../assets/media/dummy.svg';" />
             </div>
         </div>
     </div>
+
+    <div class="flex justify-center" id="hide-button">
+        <button class="mt-10 mx-auto bg-theme-100 hover:bg-indigo-800 text-white font-bold py-2 px-4 rounded" (click)="loadMore()">
+            Load More...
+        </button>
+    </div>
+
 </section>

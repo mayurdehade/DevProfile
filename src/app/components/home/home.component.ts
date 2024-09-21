@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ApiCallService } from 'src/app/services/apicall/api-call.service';
+import { NavComponent } from '../nav/nav.component';
 
 @Component({
   selector: 'app-home',
@@ -6,13 +8,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  summary: string =
-    'Aspiring Full Stack Java Developer with hands-on experience in building web applications using Java, Spring Boot, Hibernate, and Angular. Skilled in backend and frontend development, database management, and creating REST APIs. Quick learner with strong problem-solving skills, eager to contribute and grow in a professional environment.';
+scrollToTop() {
+throw new Error('Method not implemented.');
+}
+  summary: string = '';
 
-  roles: string[] = [
-    'Full Stack Developer',
-    'Front End Developer',
-    'Back End Developer',
-    'Angular Developer',
-  ];
+  roles: string[] = [];
+
+  constructor(private service: ApiCallService) {}
+
+  ngOnInit() {
+    this.service.getProfileData().subscribe((data) => {
+      // console.log(data);
+      this.summary = data.summary;
+      this.roles = data.roles;
+    });
+  }
 }

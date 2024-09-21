@@ -1,37 +1,72 @@
-<section class="text-gray-600 body-font" id="about">
-    <div class="container px-5 py-24 mx-auto flex flex-col">
+<section class="text-gray-600 body-font dark:bg-theme-900 pt-20" id="about">
+    <div class="text-center">
+        <h2 class="title-font font-semibold text-3xl dark:text-gray-100 text-gray-800">About</h2>
+    </div>
+    <div class="container px-5 pb-11 mx-auto flex flex-col">
         <div class="lg:w-4/6 mx-auto">
             <div class="flex flex-col sm:flex-row mt-10">
                 <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                    <div
-                        class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
+                    <div class="inline-flex items-center justify-cente text-gray-400 ">
+                        <img src='{{avtar}}' alt="avtar" class="rounded-3xl w-56 h-56 hover:scale-105 hover:duration-500">
                     </div>
                     <div class="flex flex-col items-center text-center justify-center">
-                        <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h2>
-                        <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-                        <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial
-                            venmo tbh hot chicken gentrify portland.</p>
+                        <h2 class="font-medium title-font mt-4 text-gray-900 text-lg dark:text-gray-200"
+                            id="about-name">Mayur Dehade</h2>
+                        <p class="dark:text-gray-300 text-gray-800 font-semibold">B.E Computer Science</p>
+                        <div class="w-12 h-1 bg-theme-100 rounded mt-2 mb-4"></div>
+                        
+                    </div>
+                    <div class="flex justify-space-between mt-5 justify-center">
+                        <!-- github -->
+                        <a href="https://github.com/mayurdehade" target="_blank"  class="w-10 h-10 flex justify-center items-center mx-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none" class="dark:fill-white fill-gray-800">
+                                <title>GitHub</title>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z" />
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/mayurdehade" target="_blank" class="w-8 h-8 flex justify-center items-center mx-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 1036 990" id="linkedin" class="dark:fill-white fill-gray-800">
+                                <title>LinkedIn</title>
+                                <path
+                                    d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://www.leetcode.com/dehademayur" target="_blank" class="w-8 h-8 flex justify-center items-center mx-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="leetcode" class="dark:fill-white fill-gray-800">
+                                <title>Leetcode</title>
+                                <path
+                                    d="M22,14.355c0-0.742-0.564-1.346-1.26-1.346H10.676c-0.696,0-1.26,0.604-1.26,1.346s0.563,1.346,1.26,1.346H20.74C21.436,15.702,22,15.098,22,14.355z">
+                                </path>
+                                <path
+                                    d="M3.482,18.187l4.313,4.361C8.768,23.527,10.113,24,11.598,24c1.485,0,2.83-0.512,3.805-1.494l2.588-2.637c0.51-0.514,0.492-1.365-0.039-1.9c-0.531-0.535-1.375-0.553-1.884-0.039l-2.676,2.607c-0.462,0.467-1.102,0.662-1.809,0.662s-1.346-0.195-1.81-0.662l-4.298-4.363c-0.463-0.467-0.696-1.15-0.696-1.863c0-0.713,0.233-1.357,0.696-1.824l4.285-4.38c0.463-0.467,1.116-0.645,1.822-0.645s1.346,0.195,1.809,0.662l2.676,2.606c0.51,0.515,1.354,0.497,1.885-0.038c0.531-0.536,0.549-1.387,0.039-1.901l-2.588-2.636c-0.649-0.646-1.471-1.116-2.392-1.33l-0.034-0.007l2.447-2.503c0.512-0.514,0.494-1.366-0.037-1.901c-0.531-0.535-1.376-0.552-1.887-0.038L3.482,10.476C2.509,11.458,2,12.813,2,14.311C2,15.809,2.509,17.207,3.482,18.187z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://stackoverflow.com/users/27378747/mayur-dehade" target="_blank" class="w-8 h-8 flex justify-center items-center mx-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" id="stack-overflow" class="dark:fill-white fill-gray-800">
+                                <title>Stack Overflow</title>
+                                <path
+                                    d="M3.698 12.651h6.317V14H3.698zM11.873.23l1.33-.23 1.08 6.224-1.33.231zM3.754 11.55l.124-1.344 6.29.58-.124 1.343zM4.132 8.687l.35-1.303 6.1 1.64-.35 1.303zM5.252 5.434l.685-1.162 5.441 3.21-.685 1.161zM8.04 2.077l1.115-.76 3.559 5.22-1.115.76z">
+                                </path>
+                                <path d="M11 15H3v-5H2v6h10v-6h-1z"></path>
+                            </svg>
+                        </a>
+                        
                     </div>
                 </div>
                 <div
-                    class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                    <p class="leading-relaxed text-lg mb-4">Meggings portland fingerstache lyft, post-ironic fixie man
-                        bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch
-                        listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel
-                        truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher.
-                        Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt
-                        butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
-                    <a class="text-indigo-500 inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
+                    class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l dark:border-gray-200 border-gray-500 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                    <p class="leading-relaxed text-lg mb-2 text-justify text-gray-800 dark:text-gray-200 font-semibold">{{bio}}</p>
+                    <br>
+                    <p class="leading-relaxed text-lg mb-2 text-justify text-gray-600 dark:text-gray-400"
+                        id="about-summary">{{about}}
+                    </p>
+                    <p class="leading-relaxed text-lg mb-2 text-justify text-gray-600 dark:text-gray-400" id="about-summary">
+                    {{about2}}
+                    </p>
                 </div>
             </div>
         </div>

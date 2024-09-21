@@ -2,10 +2,4 @@
     filter: invert(29%) sepia(74%) saturate(5989%) hue-rotate(241deg) brightness(94%) contrast(91%);
 }
 
-@media screen and (max-width: 430px) {
-    .head-res{
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-    }
-}
+

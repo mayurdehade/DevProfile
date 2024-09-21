@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { DarkmodeService } from 'src/app/services/darkmode/darkmode.service';
 
 @Component({
   selector: 'app-nav',
@@ -6,21 +7,39 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
-  isDark:boolean = false;
+
+  darkModeService: DarkmodeService = inject(DarkmodeService)
 
   toggleDarkMode():void {
-    this.isDark = !this.isDark;
+    this.darkModeService.updateDarkMode()
+  }
 
-    if (this.isDark) {
-      //dark theme
-      document.body.classList.add('dark');
-      document.getElementById('logo-text')?.classList.remove('text-gray-800');
-      document.getElementById('logo-text')?.classList.add('text-inherit');
-    } else {
-      document.body.classList.remove('dark');
-      document.getElementById('logo-text')?.classList.remove('text-inherit');
-      document.getElementById('logo-text')?.classList.add('text-gray-800');
+//   var toggleOpen = document.getElementById('toggleOpen');
+// var toggleClose = document.getElementById('toggleClose');
+// var collapseMenu = document.getElementById('collapseMenu');
+
+// function handleClick() {
+//   if (collapseMenu.style.display === 'block') {
+//     collapseMenu.style.display = 'none';
+//   } else {
+//     collapseMenu.style.display = 'block';
+//   }
+// }
+
+// toggleOpen.addEventListener('click', handleClick);
+// toggleClose.addEventListener('click', handleClick);
+
+  collapseMenu:any;
+
+  handleClick() {
+    this.collapseMenu = document.getElementById('collapseMenu');
+    if(this.collapseMenu.style.display === 'block') {
+      this.collapseMenu.style.display = 'none';
+    }
+    else {
+      this.collapseMenu.style.display = 'block';
     }
   }
-  
+
 }
+

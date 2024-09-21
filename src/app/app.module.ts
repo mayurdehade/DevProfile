@@ -9,12 +9,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ServicesComponent } from './components/services/services.component';
-import { EducationComponent } from './components/education/education.component';
-import { ExperienceComponent } from './components/experience/experience.component';
-import { ProfilesComponent } from './components/profiles/profiles.component';
 import { AboutComponent } from './components/about/about.component';
 import { NgxTypedJsModule } from 'ngx-typed-js';
-
+import { HttpClientModule } from '@angular/common/http';
+import { SkillsComponent } from './components/skills/skills.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,12 +24,16 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
     ContactComponent,
     ProjectsComponent,
     ServicesComponent,
-    EducationComponent,
-    ExperienceComponent,
-    ProfilesComponent,
     AboutComponent,
+    SkillsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgxTypedJsModule,],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgxTypedJsModule,
+    HttpClientModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
