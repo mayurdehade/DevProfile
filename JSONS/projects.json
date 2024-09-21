@@ -2,21 +2,18 @@
   "projects": [
     {
       "title": "DevProfile",
-      "image": "path/to/image.jpg",
+      "image": "https://raw.githubusercontent.com/mayurdehade/DevProfile/refs/heads/main/src/assets/media/devprofile.png",
       "githubLink": "https://github.com/mayurdehade/DevProfile",
       "deploymentLink": "https://yourdeploymentlink.com",
       "toolsAndTechnologies": [
-        "React",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Stripe",
-        "Tailwind CSS"
+        "Angular 16",
+        "Tailwind CSS",
+        "TypeScript"
       ],
-      "summary": "An online food delivery platform allowing customers to browse and order food from various restaurants. The system includes role-based access for customers and restaurant owners, enabling restaurant management, order processing, and payment integration via Stripe. The platform is built for scalability and real-time order tracking."
+      "summary": "DevProfile is a personal portfolio website developed using Angular 16 and Tailwind CSS. It serves as a professional showcase, allowing visitors to explore projects, skills, and experience. Data like project details and skills are dynamically sourced from a JSON file hosted on GitHub, making it easy to update the content.Includes a 'Contact Me' form that sends emails directly to my inbox."
     },
     {
-      "title": "CarFlex - Car Rental System",
+      "title": "CarFlex: Seamless Vehicle Rental Experience",
       "image": "path/to/image.jpg",
       "githubLink": "https://github.com/yourusername/carflex",
       "deploymentLink": "",
@@ -27,11 +24,11 @@
         "Spring Security",
         "MySQL"
       ],
-      "summary": "CarFlex is a car rental system designed to allow users to search for, book, and rent cars. It includes account creation, car listings, booking management, and admin verification for rental approvals. The system ensures secure login and role-based access control."
+      "summary": "CarFlex is a car rental system designed to allow users to search for cars, book cars, and rent cars. It includes account creation, car listings, booking management, and admin verification for rental approvals. The system ensures secure login and role-based access control."
     },
     {
       "title": "Criminal Activity Detection System",
-      "image": "path/to/image.jpg",
+      "image": "https://raw.githubusercontent.com/mayurdehade/DevProfile/refs/heads/main/src/assets/media/cyber%20project.png",
       "githubLink": "https://github.com/mayurdehade/Criminal-Activity-Detection",
       "deploymentLink": "",
       "toolsAndTechnologies": [
