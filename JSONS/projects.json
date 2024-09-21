@@ -14,9 +14,9 @@
     },
     {
       "title": "CarFlex: Seamless Vehicle Rental Experience",
-      "image": "path/to/image.jpg",
+      "image": "",
       "githubLink": "https://github.com/yourusername/carflex",
-      "deploymentLink": "null",
+      "deploymentLink": "",
       "toolsAndTechnologies": [
         "Spring Boot",
         "Angular",
