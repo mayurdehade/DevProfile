@@ -4,7 +4,7 @@
       "title": "DevProfile",
       "image": "https://raw.githubusercontent.com/mayurdehade/DevProfile/refs/heads/main/src/assets/media/devprofile.png",
       "githubLink": "https://github.com/mayurdehade/DevProfile",
-      "deploymentLink": "https://yourdeploymentlink.com",
+      "deploymentLink": "https://mayurd.netlify.app/",
       "toolsAndTechnologies": ["Angular 16", "Tailwind CSS", "TypeScript"],
       "summary": "DevProfile is a personal portfolio website developed using Angular 16 and Tailwind CSS. It serves as a professional showcase, allowing visitors to explore projects, skills, and experience. Data like project details and skills are dynamically sourced from a JSON file hosted on GitHub, making it easy to update the content.Includes a 'Contact Me' form that sends emails directly to my inbox."
     },
